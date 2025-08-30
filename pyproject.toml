@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ym-bounds"
+version = "0.1.0"
+description = "Explicit bounds and constants for SU(3) mass-gap constructive proof"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "Keefe Reeves" }]
+dependencies = ["numpy>=1.23", "mpmath>=1.3", "sympy>=1.12"]
+
+[project.scripts]
+ym-bounds = "ym_bounds.cli:main"
+ym-research = "ym_research.BoundDiscovererToolCLI:main"
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ym_bounds"]
