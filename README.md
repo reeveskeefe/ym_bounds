@@ -1,4 +1,4 @@
-# The Mass Gap in SU(3) Yang-Mills Theory: A Constructive Proof
+# The Mass Gap in SU(3) Yang-Mills Theory: A Constructive Proof of the bounds and constants
 
 **Author:** Keefe D. Reeves  
 **Year:** 2025  
@@ -7,11 +7,7 @@
 
 ## Abstract
 
-This repository contains a constructive proof that demonstrates the existence of a mass gap in four-dimensional pure SU(3) Yang-Mills theory. We establish, for a concrete family of blockings $(b,b_t,\tau)$, that the Kotecký–Preiss (KP) norm of centered polymer activities contracts quadratically under a reflection-positive, finite-range renormalization map $\mathcal{R}$:
-
-$$\eta_{k+1} \le A \eta_k^2, \qquad A \text{ independent of } k$$
-
-Together with a strong-coupling seed with $\eta_0 \ll 1$, this yields double-exponential decay $\eta_k \to 0$, summability of RG corrections, stability of the area law, a strictly positive string tension, and hence a mass gap via the transfer-operator spectral gap and Osterwalder–Schrader reconstruction.
+This repository contains a constructive proof of the bounds and constants part of our Y-M Mass Gap attempted Solution.
 
 ## Key Contributions
 
