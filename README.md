@@ -111,6 +111,6 @@ This work is made available for academic and research purposes. Please cite appr
 
 ---
 
-**Repository**: Yang-Mills Mass Gap Constructive Proof  
+**Repository**: YM-Bounds 
 **Contact**: Keefe D. Reeves  
 **Last Updated**: August 30, 2025
