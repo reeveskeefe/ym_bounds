@@ -1,0 +1,50 @@
+{
+  "inputs": {
+    "A": 2.97,
+    "C": 0.18,
+    "a": 0.08,
+    "area": 1.0,
+    "beta": 6.0,
+    "eta0": 0.05,
+    "mp_dps": 120,
+    "mstar": 0.3,
+    "p0": null,
+    "perim_density": 1.0,
+    "perim_scale": 1.0,
+    "perimeter": null,
+    "pref": 1.0,
+    "q0": null,
+    "sigma_lat": 0.045,
+    "steps": 20,
+    "sym_N": 8,
+    "tau0": 0.2
+  },
+  "meta": {
+    "git_commit": "84d1d222ab9bee152e36c7f4efd5aed8f65b27fd",
+    "mp_dps": 120,
+    "python_version": "3.13.2",
+    "timestamp_utc": "2025-08-31T14:18:12Z",
+    "tool": "ym-bounds",
+    "tool_version": "0.5.0"
+  },
+  "outputs": {
+    "collar_prod_analytic_lb": 0.9893911023070688,
+    "collar_prod_numeric": 0.9896463457749932,
+    "collar_prod_positive": true,
+    "corr_bound_at_1": 0.7408182206817179,
+    "high_shell_tail": 3.422274754982238e-06,
+    "kappa_latt": 0.010665573247898111,
+    "kappa_phys": 0.13331966559872638,
+    "lam_below_1": 0.8187307530779818,
+    "low_shell_sum": 0.0,
+    "m0_lb": 0.2,
+    "sigma_phys": 7.031249999999999,
+    "sum_eta_finite": true,
+    "sum_eta_inf_bound": 0.05871990604815033,
+    "sum_eta_numeric": 0.057588817582320234,
+    "sum_eta_sq_inf_bound": 0.002935995302407517,
+    "wl_bound_area_only": 0.0008838263069350507,
+    "wl_bound_area_perim": null,
+    "wl_perim_factor": null
+  }
+}

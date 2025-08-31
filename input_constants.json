@@ -1,0 +1,26 @@
+{
+  "A": 0.0005828515608108157,
+  "C": 0.18,
+  "tau0": 0.2,
+  "locality_radius": 2,
+  "eta0_estimate": 353.1411896778619,
+  "derivation_params": {
+    "seed": 7,
+    "T": 4,
+    "L": 4,
+    "N_configs": 16,
+    "b_space": 2,
+    "b_time": 2,
+    "tau": 0.2,
+    "kp_alpha": 0.6,
+    "kp_gamma": 0.6,
+    "kp_rmax": 2,
+    "K_smooth": 1,
+    "rp_nobs": 32
+  },
+  "metadata": {
+    "tool": "rg_step_prover",
+    "version": "1.0",
+    "description": "Constants derived from RG step contraction analysis"
+  }
+}

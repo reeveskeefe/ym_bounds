@@ -1,0 +1,1001 @@
+{
+  "meta": {
+    "mp_dps": 80,
+    "python": "3.13.2",
+    "timestamp_utc": "2025-08-30T23:51:28Z",
+    "tool": "ym-research",
+    "version": "0.3.0"
+  },
+  "rows": [
+    {
+      "A": 2.5,
+      "C": 0.2,
+      "eta0": 0.04,
+      "product": 0.9911984695558412,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.044040004000000035,
+      "sum_finite": true
+    },
+    {
+      "A": 2.6,
+      "C": 0.2,
+      "eta0": 0.04,
+      "product": 0.9911657354630488,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.044204999823727185,
+      "sum_finite": true
+    },
+    {
+      "A": 2.7,
+      "C": 0.2,
+      "eta0": 0.04,
+      "product": 0.9911329222041382,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.0443703953352972,
+      "sum_finite": true
+    },
+    {
+      "A": 2.8,
+      "C": 0.2,
+      "eta0": 0.04,
+      "product": 0.9911000267285465,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.044536205962725846,
+      "sum_finite": true
+    },
+    {
+      "A": 2.9,
+      "C": 0.2,
+      "eta0": 0.04,
+      "product": 0.9910670459839525,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.0447024471448793,
+      "sum_finite": true
+    },
+    {
+      "A": 3.0,
+      "C": 0.2,
+      "eta0": 0.04,
+      "product": 0.9910339769160283,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.04486913433272382,
+      "sum_finite": true
+    },
+    {
+      "A": 3.1,
+      "C": 0.2,
+      "eta0": 0.04,
+      "product": 0.9910008164681751,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.045036282990667795,
+      "sum_finite": true
+    },
+    {
+      "A": 3.2,
+      "C": 0.2,
+      "eta0": 0.04,
+      "product": 0.9909675615812367,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.04520390859799976,
+      "sum_finite": true
+    },
+    {
+      "A": 3.3,
+      "C": 0.2,
+      "eta0": 0.04,
+      "product": 0.9909342091931979,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.04537202665042536,
+      "sum_finite": true
+    },
+    {
+      "A": 3.4,
+      "C": 0.2,
+      "eta0": 0.04,
+      "product": 0.9909007562388578,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.04554065266170679,
+      "sum_finite": true
+    },
+    {
+      "A": 3.5,
+      "C": 0.2,
+      "eta0": 0.04,
+      "product": 0.9908671996494861,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.04570980216540783,
+      "sum_finite": true
+    },
+    {
+      "A": 2.5,
+      "C": 0.2,
+      "eta0": 0.0425,
+      "product": 0.9905944506314945,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.04706660866953205,
+      "sum_finite": true
+    },
+    {
+      "A": 2.6,
+      "C": 0.2,
+      "eta0": 0.0425,
+      "product": 0.9905573716162598,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.04725360093575086,
+      "sum_finite": true
+    },
+    {
+      "A": 2.7,
+      "C": 0.2,
+      "eta0": 0.0425,
+      "product": 0.9905201917592134,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.04744110269053603,
+      "sum_finite": true
+    },
+    {
+      "A": 2.8,
+      "C": 0.2,
+      "eta0": 0.0425,
+      "product": 0.9904829071715794,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.047629133619591105,
+      "sum_finite": true
+    },
+    {
+      "A": 2.9,
+      "C": 0.2,
+      "eta0": 0.0425,
+      "product": 0.990445513961655,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.0478177134262426,
+      "sum_finite": true
+    },
+    {
+      "A": 3.0,
+      "C": 0.2,
+      "eta0": 0.0425,
+      "product": 0.9904080082344091,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.04800686183346953,
+      "sum_finite": true
+    },
+    {
+      "A": 3.1,
+      "C": 0.2,
+      "eta0": 0.0425,
+      "product": 0.9903703860910522,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.04819659858608338,
+      "sum_finite": true
+    },
+    {
+      "A": 3.2,
+      "C": 0.2,
+      "eta0": 0.0425,
+      "product": 0.9903326436285734,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.048386943453063457,
+      "sum_finite": true
+    },
+    {
+      "A": 3.3,
+      "C": 0.2,
+      "eta0": 0.0425,
+      "product": 0.9902947769392488,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.048577916230053295,
+      "sum_finite": true
+    },
+    {
+      "A": 3.4,
+      "C": 0.2,
+      "eta0": 0.0425,
+      "product": 0.9902567821101129,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.048769536742023355,
+      "sum_finite": true
+    },
+    {
+      "A": 3.5,
+      "C": 0.2,
+      "eta0": 0.0425,
+      "product": 0.9902186552224006,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.04896182484610543,
+      "sum_finite": true
+    },
+    {
+      "A": 2.5,
+      "C": 0.2,
+      "eta0": 0.045,
+      "product": 0.989983924202747,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.050126582528763314,
+      "sum_finite": true
+    },
+    {
+      "A": 2.6,
+      "C": 0.2,
+      "eta0": 0.045,
+      "product": 0.9899422045815823,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05033708609058999,
+      "sum_finite": true
+    },
+    {
+      "A": 2.7,
+      "C": 0.2,
+      "eta0": 0.045,
+      "product": 0.9899003582729736,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.0505482301910909,
+      "sum_finite": true
+    },
+    {
+      "A": 2.8,
+      "C": 0.2,
+      "eta0": 0.045,
+      "product": 0.9898583803868646,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05076003960852992,
+      "sum_finite": true
+    },
+    {
+      "A": 2.9,
+      "C": 0.2,
+      "eta0": 0.045,
+      "product": 0.9898162660284844,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05097253914901076,
+      "sum_finite": true
+    },
+    {
+      "A": 3.0,
+      "C": 0.2,
+      "eta0": 0.045,
+      "product": 0.9897740102977127,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05118575364968329,
+      "sum_finite": true
+    },
+    {
+      "A": 3.1,
+      "C": 0.2,
+      "eta0": 0.045,
+      "product": 0.9897316082884008,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05139970798218724,
+      "sum_finite": true
+    },
+    {
+      "A": 3.2,
+      "C": 0.2,
+      "eta0": 0.045,
+      "product": 0.989689055087642,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05161442705634158,
+      "sum_finite": true
+    },
+    {
+      "A": 3.3,
+      "C": 0.2,
+      "eta0": 0.045,
+      "product": 0.9896463457749932,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05182993582408821,
+      "sum_finite": true
+    },
+    {
+      "A": 3.4,
+      "C": 0.2,
+      "eta0": 0.045,
+      "product": 0.9896034754216438,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05204625928369838,
+      "sum_finite": true
+    },
+    {
+      "A": 3.5,
+      "C": 0.2,
+      "eta0": 0.045,
+      "product": 0.9895604390895325,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.052263422484250414,
+      "sum_finite": true
+    },
+    {
+      "A": 2.5,
+      "C": 0.2,
+      "eta0": 0.0475,
+      "product": 0.989366849637683,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.053220182443152846,
+      "sum_finite": true
+    },
+    {
+      "A": 2.6,
+      "C": 0.2,
+      "eta0": 0.0475,
+      "product": 0.9893201878494603,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05345574432588773,
+      "sum_finite": true
+    },
+    {
+      "A": 2.7,
+      "C": 0.2,
+      "eta0": 0.0475,
+      "product": 0.9892733688542318,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05369210164860368,
+      "sum_finite": true
+    },
+    {
+      "A": 2.8,
+      "C": 0.2,
+      "eta0": 0.0475,
+      "product": 0.9892263865770018,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.053929285224239565,
+      "sum_finite": true
+    },
+    {
+      "A": 2.9,
+      "C": 0.2,
+      "eta0": 0.0475,
+      "product": 0.9891792349353893,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05416732590864009,
+      "sum_finite": true
+    },
+    {
+      "A": 3.0,
+      "C": 0.2,
+      "eta0": 0.0475,
+      "product": 0.9891319078386522,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05440625460549727,
+      "sum_finite": true
+    },
+    {
+      "A": 3.1,
+      "C": 0.2,
+      "eta0": 0.0475,
+      "product": 0.9890843991866397,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05464610227165763,
+      "sum_finite": true
+    },
+    {
+      "A": 3.2,
+      "C": 0.2,
+      "eta0": 0.0475,
+      "product": 0.9890367028686704,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05488689992280837,
+      "sum_finite": true
+    },
+    {
+      "A": 3.3,
+      "C": 0.2,
+      "eta0": 0.0475,
+      "product": 0.9889888127623332,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05512867863955517,
+      "sum_finite": true
+    },
+    {
+      "A": 3.4,
+      "C": 0.2,
+      "eta0": 0.0475,
+      "product": 0.988940722732208,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.0553714695739052,
+      "sum_finite": true
+    },
+    {
+      "A": 3.5,
+      "C": 0.2,
+      "eta0": 0.0475,
+      "product": 0.988892426628505,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.055615303956167934,
+      "sum_finite": true
+    },
+    {
+      "A": 2.5,
+      "C": 0.2,
+      "eta0": 0.05,
+      "product": 0.9887431835177266,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05634768009185934,
+      "sum_finite": true
+    },
+    {
+      "A": 2.6,
+      "C": 0.2,
+      "eta0": 0.05,
+      "product": 0.9886912717714983,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05660988137426106,
+      "sum_finite": true
+    },
+    {
+      "A": 2.7,
+      "C": 0.2,
+      "eta0": 0.05,
+      "product": 0.9886391670911024,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05687305961075921,
+      "sum_finite": true
+    },
+    {
+      "A": 2.8,
+      "C": 0.2,
+      "eta0": 0.05,
+      "product": 0.9885868620107978,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.057137252706759775,
+      "sum_finite": true
+    },
+    {
+      "A": 2.9,
+      "C": 0.2,
+      "eta0": 0.05,
+      "product": 0.9885343490535597,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05740249863234251,
+      "sum_finite": true
+    },
+    {
+      "A": 3.0,
+      "C": 0.2,
+      "eta0": 0.05,
+      "product": 0.9884816207296101,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.057668835429709395,
+      "sum_finite": true
+    },
+    {
+      "A": 3.1,
+      "C": 0.2,
+      "eta0": 0.05,
+      "product": 0.9884286695348413,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05793630122118468,
+      "sum_finite": true
+    },
+    {
+      "A": 3.2,
+      "C": 0.2,
+      "eta0": 0.05,
+      "product": 0.9883754879491253,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05820493421778565,
+      "sum_finite": true
+    },
+    {
+      "A": 3.3,
+      "C": 0.2,
+      "eta0": 0.05,
+      "product": 0.9883220684345084,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05847477272838435,
+      "sum_finite": true
+    },
+    {
+      "A": 3.4,
+      "C": 0.2,
+      "eta0": 0.05,
+      "product": 0.9882684034332856,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.058745855169479624,
+      "sum_finite": true
+    },
+    {
+      "A": 3.5,
+      "C": 0.2,
+      "eta0": 0.05,
+      "product": 0.9882144853659498,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.059018220075599495,
+      "sum_finite": true
+    },
+    {
+      "A": 2.5,
+      "C": 0.2,
+      "eta0": 0.0525,
+      "product": 0.9881128796421339,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.05950936200751242,
+      "sum_finite": true
+    },
+    {
+      "A": 2.6,
+      "C": 0.2,
+      "eta0": 0.0525,
+      "product": 0.9880554035642577,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.059799819715637095,
+      "sum_finite": true
+    },
+    {
+      "A": 2.7,
+      "C": 0.2,
+      "eta0": 0.0525,
+      "product": 0.9879976930536423,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.060091465429446496,
+      "sum_finite": true
+    },
+    {
+      "A": 2.8,
+      "C": 0.2,
+      "eta0": 0.0525,
+      "product": 0.987939739024175,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06038434532939465,
+      "sum_finite": true
+    },
+    {
+      "A": 2.9,
+      "C": 0.2,
+      "eta0": 0.0525,
+      "product": 0.9878815323728813,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06067850569148834,
+      "sum_finite": true
+    },
+    {
+      "A": 3.0,
+      "C": 0.2,
+      "eta0": 0.0525,
+      "product": 0.9878230639777568,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06097399289829215,
+      "sum_finite": true
+    },
+    {
+      "A": 3.1,
+      "C": 0.2,
+      "eta0": 0.0525,
+      "product": 0.9877643246954404,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06127085345074804,
+      "sum_finite": true
+    },
+    {
+      "A": 3.2,
+      "C": 0.2,
+      "eta0": 0.0525,
+      "product": 0.9877053053587189,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06156913398083872,
+      "sum_finite": true
+    },
+    {
+      "A": 3.3,
+      "C": 0.2,
+      "eta0": 0.0525,
+      "product": 0.9876459967738622,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06186888126512379,
+      "sum_finite": true
+    },
+    {
+      "A": 3.4,
+      "C": 0.2,
+      "eta0": 0.0525,
+      "product": 0.9875863897177809,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06217014223917802,
+      "sum_finite": true
+    },
+    {
+      "A": 3.5,
+      "C": 0.2,
+      "eta0": 0.0525,
+      "product": 0.987526474935,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06247296401296077,
+      "sum_finite": true
+    },
+    {
+      "A": 2.5,
+      "C": 0.2,
+      "eta0": 0.055,
+      "product": 0.9874758890314342,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06270552962277137,
+      "sum_finite": true
+    },
+    {
+      "A": 2.6,
+      "C": 0.2,
+      "eta0": 0.055,
+      "product": 0.9874125273116335,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.0630258986385212,
+      "sum_finite": true
+    },
+    {
+      "A": 2.7,
+      "C": 0.2,
+      "eta0": 0.055,
+      "product": 0.9873488832946041,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06334769934055226,
+      "sum_finite": true
+    },
+    {
+      "A": 2.8,
+      "C": 0.2,
+      "eta0": 0.055,
+      "product": 0.9872849460185974,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06367098750163953,
+      "sum_finite": true
+    },
+    {
+      "A": 2.9,
+      "C": 0.2,
+      "eta0": 0.055,
+      "product": 0.987220704497167,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06399581903319265,
+      "sum_finite": true
+    },
+    {
+      "A": 3.0,
+      "C": 0.2,
+      "eta0": 0.055,
+      "product": 0.9871561477160259,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06432225000122276,
+      "sum_finite": true
+    },
+    {
+      "A": 3.1,
+      "C": 0.2,
+      "eta0": 0.055,
+      "product": 0.9870912646296708,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06465033664349165,
+      "sum_finite": true
+    },
+    {
+      "A": 3.2,
+      "C": 0.2,
+      "eta0": 0.055,
+      "product": 0.9870260441577681,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06498013538788473,
+      "sum_finite": true
+    },
+    {
+      "A": 3.3,
+      "C": 0.2,
+      "eta0": 0.055,
+      "product": 0.9869604751812906,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06531170287205097,
+      "sum_finite": true
+    },
+    {
+      "A": 3.4,
+      "C": 0.2,
+      "eta0": 0.055,
+      "product": 0.9868945465383974,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06564509596435152,
+      "sum_finite": true
+    },
+    {
+      "A": 3.5,
+      "C": 0.2,
+      "eta0": 0.055,
+      "product": 0.9868282470200496,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06598037178615968,
+      "sum_finite": true
+    },
+    {
+      "A": 2.5,
+      "C": 0.2,
+      "eta0": 0.057499999999999996,
+      "product": 0.9868321599296844,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06593649932440329,
+      "sum_finite": true
+    },
+    {
+      "A": 2.6,
+      "C": 0.2,
+      "eta0": 0.057499999999999996,
+      "product": 0.9867625839656332,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.0662884743111605,
+      "sum_finite": true
+    },
+    {
+      "A": 2.7,
+      "C": 0.2,
+      "eta0": 0.057499999999999996,
+      "product": 0.9866926708480629,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06664216055664217,
+      "sum_finite": true
+    },
+    {
+      "A": 2.8,
+      "C": 0.2,
+      "eta0": 0.057499999999999996,
+      "product": 0.9866224074567111,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06699762488873216,
+      "sum_finite": true
+    },
+    {
+      "A": 2.9,
+      "C": 0.2,
+      "eta0": 0.057499999999999996,
+      "product": 0.986551780635781,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06735493433315447,
+      "sum_finite": true
+    },
+    {
+      "A": 3.0,
+      "C": 0.2,
+      "eta0": 0.057499999999999996,
+      "product": 0.9864807771894624,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06771415613625957,
+      "sum_finite": true
+    },
+    {
+      "A": 3.1,
+      "C": 0.2,
+      "eta0": 0.057499999999999996,
+      "product": 0.98640938387712,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06807535778949744,
+      "sum_finite": true
+    },
+    {
+      "A": 3.2,
+      "C": 0.2,
+      "eta0": 0.057499999999999996,
+      "product": 0.9863375874081403,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06843860705563795,
+      "sum_finite": true
+    },
+    {
+      "A": 3.3,
+      "C": 0.2,
+      "eta0": 0.057499999999999996,
+      "product": 0.9862653744364245,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06880397199679893,
+      "sum_finite": true
+    },
+    {
+      "A": 3.4,
+      "C": 0.2,
+      "eta0": 0.057499999999999996,
+      "product": 0.9861927315545159,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.0691715210043428,
+      "sum_finite": true
+    },
+    {
+      "A": 3.5,
+      "C": 0.2,
+      "eta0": 0.057499999999999996,
+      "product": 0.9861196452873491,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06954132283070194,
+      "sum_finite": true
+    },
+    {
+      "A": 2.5,
+      "C": 0.2,
+      "eta0": 0.06,
+      "product": 0.986181637805389,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06920260251565126,
+      "sum_finite": true
+    },
+    {
+      "A": 2.6,
+      "C": 0.2,
+      "eta0": 0.06,
+      "product": 0.9861055113453602,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.06958791986361614,
+      "sum_finite": true
+    },
+    {
+      "A": 2.7,
+      "C": 0.2,
+      "eta0": 0.06,
+      "product": 0.9860289852256747,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.0699752673738494,
+      "sum_finite": true
+    },
+    {
+      "A": 2.8,
+      "C": 0.2,
+      "eta0": 0.06,
+      "product": 0.9859520438548829,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.07036472454952998,
+      "sum_finite": true
+    },
+    {
+      "A": 2.9,
+      "C": 0.2,
+      "eta0": 0.06,
+      "product": 0.9858746715912412,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.07075637117192592,
+      "sum_finite": true
+    },
+    {
+      "A": 3.0,
+      "C": 0.2,
+      "eta0": 0.06,
+      "product": 0.9857968527364198,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.07115028733242401,
+      "sum_finite": true
+    },
+    {
+      "A": 3.1,
+      "C": 0.2,
+      "eta0": 0.06,
+      "product": 0.9857185715287476,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.0715465534669306,
+      "sum_finite": true
+    },
+    {
+      "A": 3.2,
+      "C": 0.2,
+      "eta0": 0.06,
+      "product": 0.9856398121359766,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.07194525039272896,
+      "sum_finite": true
+    },
+    {
+      "A": 3.3,
+      "C": 0.2,
+      "eta0": 0.06,
+      "product": 0.9855605586475479,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.07234645934787813,
+      "sum_finite": true
+    },
+    {
+      "A": 3.4,
+      "C": 0.2,
+      "eta0": 0.06,
+      "product": 0.9854807950663476,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.07275026203323885,
+      "sum_finite": true
+    },
+    {
+      "A": 3.5,
+      "C": 0.2,
+      "eta0": 0.06,
+      "product": 0.9854005052999296,
+      "product_positive": true,
+      "steps": 20,
+      "sum_eta": 0.07315674065721194,
+      "sum_finite": true
+    }
+  ]
+}

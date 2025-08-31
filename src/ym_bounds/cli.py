@@ -320,6 +320,43 @@ def _write_json(path: Path, payload: Dict[str, Any]) -> None:
 # ----------------------------- Subcommands -----------------------------
 
 def _cmd_report(ns: argparse.Namespace) -> int:
+    # Load constants from JSON if provided
+    if ns.constants:
+        print(f"📥 Loading constants from: {ns.constants}")
+        try:
+            with open(ns.constants, 'r') as f:
+                constants = json.load(f)
+            
+            # Override CLI arguments with loaded constants
+            if ns.eta0 is None:
+                ns.eta0 = constants.get("eta0_estimate", constants.get("eta0"))
+            if ns.A is None:
+                ns.A = constants.get("A")
+            if ns.C is None:
+                ns.C = constants.get("C")
+            if ns.tau0 is None:
+                ns.tau0 = constants.get("tau0")
+                
+            print(f"   ✅ Loaded: A={ns.A}, C={ns.C}, tau0={ns.tau0}, eta0={ns.eta0}")
+            if "metadata" in constants:
+                meta = constants["metadata"]
+                print(f"   📋 Source: {meta.get('tool', 'unknown')} v{meta.get('version', 'unknown')}")
+                
+        except Exception as e:
+            print(f"   ❌ Error loading constants: {e}")
+            return 1
+    
+    # Validate required arguments
+    missing = []
+    if ns.eta0 is None: missing.append("--eta0")
+    if ns.A is None: missing.append("--A") 
+    if ns.C is None: missing.append("--C")
+    if ns.tau0 is None: missing.append("--tau0")
+    if missing:
+        print(f"❌ Missing required arguments: {', '.join(missing)}")
+        print("   Either provide them explicitly or use --constants <file.json>")
+        return 1
+    
     p0 = ns.p0 if ns.p0 is not None else None
     q0 = ns.q0 if ns.q0 is not None else None
     sym_N = ns.sym_N if ns.sym_N is not None else None
@@ -432,16 +469,18 @@ def _build_parser() -> argparse.ArgumentParser:
     rp.add_argument("--sym-N", type=int, help="Use symmetric cut p0=q0=N.")
     rp.add_argument("--p0", type=int, help="Lower bound p0 (ignored if --sym-N is set).")
     rp.add_argument("--q0", type=int, help="Lower bound q0 (ignored if --sym-N is set).")
-    rp.add_argument("--eta0", type=float, required=True)
-    rp.add_argument("--A", type=float, required=True)
-    rp.add_argument("--C", type=float, required=True)
+    rp.add_argument("--eta0", type=float, help="Initial KP norm (required unless --constants provided)")
+    rp.add_argument("--A", type=float, help="Contraction constant A (required unless --constants provided)")
+    rp.add_argument("--C", type=float, help="Collar constant C (required unless --constants provided)")
     rp.add_argument("--steps", type=int, default=20)
-    rp.add_argument("--tau0", type=float, required=True)
+    rp.add_argument("--tau0", type=float, help="Tube cost parameter (required unless --constants provided)")
     rp.add_argument("--sigma-lat", type=float, required=True)
     rp.add_argument("--a", type=float, required=True)
     rp.add_argument("--area", type=float, default=1.0)
     rp.add_argument("--mstar", type=float, default=0.3)
     rp.add_argument("--pref", type=float, default=1.0)
+    # NEW: constants import
+    rp.add_argument("--constants", type=Path, help="Import constants from JSON file (from RG step analysis)")
     # NEW: perimeter options
     rp.add_argument("--perim-scale", type=float, default=1.0, help="Lattice-length normalization per independent collar block.")
     rp.add_argument("--perim-density", type=float, default=1.0, help="Independent collar blocks per unit lattice perimeter.")
