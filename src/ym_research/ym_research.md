@@ -17,11 +17,10 @@ machine-verifiable constants for the SU(3) mass-gap constructive pipeline.
 From your repo root (with a Python 3.10+ venv recommended):
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -e .
-
+cd ym_bounds
+pip install -e .
+pip install mpmath
+```
 This installs both CLIs:
 	•	ym-bounds — prints a single, self-contained constants report
 	•	ym-research — exploration & optimization workflows (this tool)
@@ -35,143 +34,98 @@ List recipes (what to run and why):
 ym-research recipe
 
 Run a full constants snapshot (via ym-bounds) and export artifacts:
-
-ym-bounds report \
-  --beta 6.0 --p0 6 --q0 0 \
-  --eta0 0.05 --A 3.0 --C 0.2 --steps 20 \
-  --tau0 0.4 --sigma-lat 0.045 --a 0.08 --area 1.0 \
-  --csv bounds.csv --tex bounds.tex --json bounds.json
-
+```
+ym-research sweep-contraction \
+  --eta0-min 0.04 --eta0-max 0.06 --grid-eta 9 \
+  --A-min 2.5  --A-max 3.5  --grid-A 11 \
+  --steps 20 --C 0.2 \
+  --csv src/ym_research/bounds.csv \
+  --json src/ym_research/bounds.json
+```
 
 ⸻
 
-Commands
+Perfect — since your test run of
+
+ym-research sweep-contraction ...
+
+succeeded, we now know exactly how the CLI is supposed to be used. Let’s re-check the rest of the commands you pasted and adjust them so they’re consistent with the working syntax.
+
+⸻
+
+Command Set
 
 1) sweep-contraction
 
-Map safe regions of initial smallness η0 and contraction constant A where:
-	•	the correction tail Σ η_k is finite; and
-	•	the collar product ∏(1 − C η_k) stays positive.
 
+Here’s the dense version they suggest in the “workflows” section:
+```
 ym-research sweep-contraction \
-  --eta0-min 0.02 --eta0-max 0.08 --grid-eta 7 \
-  --A-min 2.0 --A-max 5.0 --grid-A 7 \
+  --eta0-min 0.02 --eta0-max 0.08 --grid-eta 13 \
+  --A-min 2.0  --A-max 5.0  --grid-A 13 \
   --steps 20 --C 0.2 \
-  --csv sweep.csv --json sweep.json
-
-Output columns (CSV):
-	•	eta0, A, steps, C, sum_eta, product, sum_finite, product_positive
-
-Interpretation:
-	•	sum_finite==True + product_positive==True → region satisfies the contraction and collar constraints.
+  --csv src/ym_research/sweep_dense.csv
+```
 
 ⸻
 
 2) optimize-tail
 
-Pick (p₀,q₀) so the SU(3) rep tail is below a given tolerance at fixed β.
+Your tool expects flags: --beta, --tol, --strategy, --N-min, --N-max, and optionally --json.
 
-Two strategies:
-	•	strip: keeps q0=0, increases p0
-	•	symmetric: increases p0=q0 together
+Strip strategy example:
 
-Examples
+ym-research optimize-tail \
+  --beta 6.0 --tol 1e-2 \
+  --strategy strip --N-min 4 --N-max 20 \
+  --json src/ym_research/tail.json
 
-# Fundamental strip (q0=0), target tail ≤ 1e-2 at β=6
-ym-research optimize-tail --beta 6.0 --tol 1e-2 \
-  --strategy strip --N-min 4 --N-max 20 --json tail.json
+Symmetric strategy example:
 
-# Symmetric (p0=q0), tighter tolerance
-ym-research optimize-tail --beta 6.0 --tol 5e-3 \
+ym-research optimize-tail \
+  --beta 6.0 --tol 5e-3 \
   --strategy symmetric --N-min 4 --N-max 30
 
-Interpretation:
-	•	The tool returns the smallest N that meets tail ≤ tol, along with the partial and tail values.
-	•	Uses a sharp shell minimum: ( \min_{p+q=n} C_2 = \frac{n^2}{4} + n ), ensuring a rigorous bound.
 
 ⸻
 
 3) target-gap
 
-Back out τ₀ from a desired spectral gap m₀ using the certified relation m₀ ≥ τ₀.
-
+This one is simple and  as-is:
+```
 ym-research target-gap --m0 0.5
 
-Interpretation:
-	•	Prints Spec(T) ⊂ {1} ∪ [e^{−τ₀}, 1) with τ₀ = m₀_target.
-	•	Use this to align spectral claims with tube-cost lower bounds in your text.
-
+```
 ⸻
 
 4) string-table
 
-Convert lattice string tension to physical units across one or multiple spacings a,
-and compute the area-law upper bound for a given loop area.
+This one was failing earlier because of --input (not valid). The right flags are: --sigma-lat, --a or --a-list, --area, and output flags (--csv, --json, --tex).
 
-# Single spacing
-ym-research string-table --sigma-lat 0.045 --a 0.08 --area 1 --csv sigma_single.csv
-
-# Multiple spacings
-ym-research string-table --sigma-lat 0.045 --a-list 0.12,0.10,0.08 --area 1 \
-  --csv sigma_multi.csv
-
-Output columns (CSV):
-	•	sigma_lat, a, sigma_phys, area, wl_bound
-
-Interpretation:
-	•	sigma_phys = sigma_lat / a^2
-	•	wl_bound = exp(−sigma_phys * area) (area-law upper bound for ⟨W(C)⟩)
+Single spacing:
+```
+ym-research string-table \
+  --sigma-lat 0.045 --a 0.08 --area 1 \
+  --csv src/ym_research/sigma_single.csv
+```
+Multiple spacings:
+```
+ym-research string-table \
+  --sigma-lat 0.045 --a-list 0.12,0.10,0.08 --area 1 \
+  --csv src/ym_research/sigma_multi.csv
+```
 
 ⸻
 
 5) recipe
 
-Show curated example commands and what they’re for:
-
+This is just:
+```
 ym-research recipe
-
-
-⸻
-
-Practical Workflows
-
-A. Certify a constants snapshot (paper appendix)
-	1.	Choose parameters (β, p₀,q₀, η₀, A, C, τ₀, σ_lat, a).
-	2.	Run:
-
-ym-bounds report \
-  --beta 6.0 --p0 6 --q0 0 \
-  --eta0 0.05 --A 3.0 --C 0.2 \
-  --tau0 0.4 --sigma-lat 0.045 --a 0.08 --area 1 \
-  --csv bounds.csv --tex bounds.tex --json bounds.json
-
-
-	3.	Commit bounds.csv and bounds.json for reproducibility; paste bounds.tex into the appendix.
-
-B. Find a safe RG region (summability + collar positivity)
-
-ym-research sweep-contraction \
-  --eta0-min 0.02 --eta0-max 0.08 --grid-eta 13 \
-  --A-min 2.0 --A-max 5.0 --grid-A 13 \
-  --steps 20 --C 0.2 \
-  --csv sweep_dense.csv
-
-Sort by product descending to highlight robust zones.
-
-C. Tighten SU(3) representation tails
-
-ym-research optimize-tail --beta 6.0 --tol 1e-3 --strategy strip --N-min 4 --N-max 40
-
-Use the reported N as (p0=N,q0=0) in your ym-bounds run.
+```
 
 ⸻
 
-Input Validation & Failure Modes
-	•	All commands validate positivity/finite-ness of inputs and fail fast with clear errors.
-	•	If CSV/JSON paths point to non-existent directories, they will be created.
-	•	For string-table, use either --a or --a-list. If both are omitted, the command fails.
-
-⸻
 
 Reproducibility
 	•	Outputs are deterministic for given inputs (no randomness).
